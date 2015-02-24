@@ -1,15 +1,16 @@
-# com.zengularity.cordova.hockeyapp [![experimental](http://hughsk.github.io/stability-badges/dist/experimental.svg)](http://github.com/hughsk/stability-badges)
+# com.mallzee.cordova.hockeyapp [![experimental](http://hughsk.github.io/stability-badges/dist/experimental.svg)](http://github.com/hughsk/stability-badges)
 
 This plugin exposes the HockeyApp SDK for ios and android
 
 Including:
 
 * HockeyAppSDK-iOS 3.5.4
-* HockeyAppSDK-Android 3.0.1
+* HockeyAppSDK-Android 3.5.0
 
 ## Installation
 
     cordova plugin add https://github.com/mallzee/cordova-plugin-hockeyapp
+    
     <meta-data android:name="HOCKEY_APP_KEY" android:value="hockeyAppId" />
 
 
