@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import <Cordova/CDVPlugin.h>
 
-@interface HockeyApp : CDVPlugin {
+@interface HockeyAppPlugin : CDVPlugin {
     BOOL initialized;
 }
 

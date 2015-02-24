@@ -1,8 +1,8 @@
-#import "HockeyApp.h"
+#import "HockeyAppPlugin.h"
 #import <HockeySDK/HockeySDK.h>
 #import <Cordova/CDVViewController.h>
 
-@implementation HockeyApp
+@implementation HockeyAppPlugin
 
 - (id)init
 {
