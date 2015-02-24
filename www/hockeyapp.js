@@ -6,7 +6,10 @@ var hockeyapp = {
     },
     feedback:function(success, failure) {
         exec(success, failure, "HockeyApp", "feedback", []);
-    }
+    },
+    testCrash: function(success, failure) {
+		exec(success, failure, "HockeyAppPlugin", "forcecrash", []);
+	}
 };
 
 module.exports = hockeyapp;
