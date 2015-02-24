@@ -35,14 +35,14 @@ public class HockeyAppPlugin extends CordovaPlugin {
 	    }
 		super.initialize(cordova, webView);
 	  	_checkForCrashes();
-	  	_checkForUpdates();
+	  	//_checkForUpdates();
 		Log.d(LOG_TAG, "HockeyApp Plugin initialized");
 	}
 	
 	@Override
 	public void onResume(boolean multitasking) {
 		Log.d(LOG_TAG, "HockeyApp Plugin resuming");
-	  _checkForUpdates();
+	  //_checkForUpdates();
 	  _checkForCrashes();
 		super.onResume(multitasking);
 	}
@@ -59,10 +59,13 @@ public class HockeyAppPlugin extends CordovaPlugin {
                     //callbackContext.success(); // Thread-safe.
                 }
             });
-    }else if (action.equals("feedback")) {
+    } else if (action.equals("feedback")) {
     	this.feedback();
     	ret=true;
-    }else{
+    } else if(action.equals("start")) {
+    	//Not required for Android
+    	ret=true;
+    } else{
       callbackContext.error(LOG_TAG + " error: invalid action (" + action + ")");
       ret=false;
     }
